@@ -66,7 +66,7 @@ const Header = () => {
       </nav>
       <br />
       ADVERTISEMENT
-      <img src = {carAd} className="img-responsive" alt="Responsive" />
+      <img src={carAd} className="img-responsive" alt="Responsive" />
       <Switch>
         <Route path="/" exact component={Newspaper} />
         <Route path="/categories/:name" component={Categories} />

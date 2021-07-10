@@ -46,6 +46,7 @@ class Home extends Component {
     var low = Math.floor(today.temp_min);
     var humidity = Math.floor(today.humidity);
     var date = moment().format("dddd, MMMM Do YYYY h:mm A");
+    const divStyle = {marginTop: '-3%'};
     return (
       <div className="container" style={{ marginLeft: "0.5%" }}>
         <p>{date}</p>
@@ -75,7 +76,9 @@ class Home extends Component {
                 <button onClick={() => this.setState({ more: true })}>
                   <span className="glyphicon glyphicon-arrow-down"></span>
                 </button>
-              ) : null}
+              ) : <button onClick={() => this.setState({ more: false })}>
+              <span className="glyphicon glyphicon-arrow-up"></span>
+            </button>}
               <br />
               {more ? (
                 <span>
@@ -98,7 +101,7 @@ class Home extends Component {
         ) : (
           <p>Loading...</p>
         )}
-        <Header />
+        <Header/>
       </div>
     );
   }

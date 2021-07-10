@@ -28,7 +28,7 @@ class newspaper extends Component {
         {isLoading ? (
           news.map((headlines, i) => {
             return (
-              <div key = {i}>
+              <div key={i}>
                 {headlines.urlToImage !== null &&
                 headlines.description !== null &&
                 headlines.content !== null ? (
