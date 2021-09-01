@@ -1,7 +1,7 @@
 import { React, Component } from "react";
 import axios from "axios";
 import moment from "moment";
-import Header from './header.js'
+import Header from "./header.js";
 
 class Home extends Component {
   state = {
@@ -46,7 +46,7 @@ class Home extends Component {
     var low = Math.floor(today.temp_min);
     var humidity = Math.floor(today.humidity);
     var date = moment().format("dddd, MMMM Do YYYY h:mm A");
-    const divStyle = {marginTop: '-3%'};
+    const divStyle = { marginTop: "-3%" };
     return (
       <div className="container" style={{ marginLeft: "0.5%" }}>
         <p>{date}</p>
@@ -76,9 +76,11 @@ class Home extends Component {
                 <button onClick={() => this.setState({ more: true })}>
                   <span className="glyphicon glyphicon-arrow-down"></span>
                 </button>
-              ) : <button onClick={() => this.setState({ more: false })}>
-              <span className="glyphicon glyphicon-arrow-up"></span>
-            </button>}
+              ) : (
+                <button onClick={() => this.setState({ more: false })}>
+                  <span className="glyphicon glyphicon-arrow-up"></span>
+                </button>
+              )}
               <br />
               {more ? (
                 <span>
@@ -101,7 +103,7 @@ class Home extends Component {
         ) : (
           <p>Loading...</p>
         )}
-        <Header/>
+        <Header />
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import { Link, Switch, Route, useLocation } from "react-router-dom";
 import Newspaper from "./newspaper.js";
 import Categories from "./categories.js";
-import carAd from "./images/carAd.jpg";
 
 const Header = () => {
   //assigning location variable
@@ -65,8 +64,6 @@ const Header = () => {
         </ul>
       </nav>
       <br />
-      ADVERTISEMENT
-      <img src={carAd} className="img-responsive" alt="Responsive" />
       <Switch>
         <Route path="/" exact component={Newspaper} />
         <Route path="/categories/:name" component={Categories} />

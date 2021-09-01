@@ -1,21 +1,18 @@
-# News app Demo 
-News App created using News API and Weather API
+# News app Demo
 
-# Installation
+This is a single page react application that displays news and weather details using News API and Weather API. Create React App was used to set up the application.
 
-```sh
-$ git clone https://github.com/GaddamMeghana578/NEWS-APP.git
-$ npm i (or)  yarn install
-```
+### Getting Started
 
-## Folder Structure
+The following instructions will get the project up and running for development and testing purposes.
 
-Project folder structure should look like this:
+### Folder Structure
+
+The following folder structure should be followed for the app to successfully run.
 
 ```
-my-app/
+NEWS-APP/
   README.md
-  node_modules/
   package.json
   public/
     favicon.ico
@@ -31,55 +28,31 @@ my-app/
     newspaper.js
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+# Installation
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+How to properly install and configure this repository to work on your machine.
 
-You can delete or rename the other files.
+Cloning the repository
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
+```
+git clone ...
+```
 
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
+## Starting the repository on your machine
 
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
+Use **npm install** or **yarn install** to install the packages defined in the package.json.
 
-## Available Scripts
+Use **npm start** or **yarn start** to start the server and the client app. The client app should be running on http://localhost:3000
 
-In the project directory, you can run:
+The host and/or the port can be changed to non-defaults by editing the package.json file.
 
-### `npm start` or `yarn start`
+Here is an example.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+"scripts": {
+    "start": "HOST=192.168.1.100 PORT=5000 react-scripts start",
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Authors
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
-
-### `npm run build` or `yarn build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.# react-newspaper
+- **Meghana Gaddam** - _NEWS-APP project work_ - [LearnMERN](https://github.com/GaddamMeghana578/NEWS-APP)
